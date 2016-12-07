@@ -6,6 +6,8 @@
 ###### DSI
 - Amer Shalan
 - Max Federman
+
+###### WDI
 - Mike Cohen
 - Natty Davis
 - Synclair Wang
