@@ -1,0 +1,22 @@
+{
+  "name": "weather-uber-or-taxi",
+  "version": "1.0.0",
+  "description": "shows the predicted demand for taxis or uber based on the weather report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntaft/front-end-stuff.git"
+  },
+  "author": "Nick Taft,",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntaft/front-end-stuff/issues"
+  },
+  "homepage": "https://github.com/ntaft/front-end-stuff#readme",
+  "dependencies": {
+    "chart.js": "^2.4.0"
+  }
+}
