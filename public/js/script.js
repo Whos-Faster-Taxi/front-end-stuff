@@ -31,8 +31,13 @@ function getWeather(position) {
     .then(r => r.json())
     .then((data) => {
       // console.log(data);
-      renderGraph(ctx, data);
-      document.querySelector('#city-name').innerText = data.city.name;
+      document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.humidity);
+      document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.temp);
+      document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.humidity);
+
+
+      // renderGraph(ctx, data);
+      // document.querySelector('#city-name').innerText = data.city.name;
       console.log(data.city.name);
     })
     .catch(err => console.log(err));
