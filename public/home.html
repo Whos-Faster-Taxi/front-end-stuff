@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Who's Faster?</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-  <h1>Some random stuff</h1>
-  <h2 id="hook"></h2>
-  <button id="btn">Get location</button>
 
-</body>
-<script src="../js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Who's Faster? </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+  </head>
+
+  <body>
+
+    <div class="page-container">
+
+      <div class='header-container'>
+        <img class='location-pin-image' src="http://www.myiconfinder.com/uploads/iconsets/256-256-2cf65dcba39e9ba577fccb630a2b93bf.png">
+        <ul class='nav-bar'>
+          <li class='nav'><a class='nav-link' href="#home">Home</a></li>
+          <li class='nav'><a class='nav-link' href="#about">About</a></li>
+          <li class='nav'><a class='nav-link' href="#contact">Contact</a></li>
+        </ul>
+      </div> <!-- header-container -->
+
+      <div class="content-wrapper">
+        <div class='content-container'>
+          <h1>Who's <br> Faster?</h1>
+          <h3>Use your <span class='current-location-text'>current location</span> OR type your own: </h3>
+          <input class='input-location' type="text" placeholder="Your Current Location">
+          <h3>Where do you want to go?</h3>
+          <input class='input-location' type="text" required placeholder="Enter Address Here!">
+          <button class='submit'>Find a Ride!</button>
+        </div>
+      </div> <!-- content-wrapper -->
+
+      <div class="footer">
+        <a href="https://github.com/Whos-Faster-Taxi">made with <span style="color: #c9463b">&hearts;</span></a>
+      </div>
+
+    </div> <!-- page-container -->
+
+    <script src="./js/script.js"></script>
+
+  </body>
 </html>

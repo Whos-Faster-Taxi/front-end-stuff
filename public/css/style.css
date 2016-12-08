@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.page-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('https://cdn.pixabay.com/photo/2015/11/29/19/25/morning-1069218__340.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  position: relative;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  line-height: 10vh;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.location-pin-image {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.nav-bar {
+  position: absolute;
+  list-style: none;
+  display: inline-block;
+  height: 100%;
+}
+
+.nav {
+  display: inline-block;
+  padding: 0 1vw;
+  font-size: 4vh;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-link:link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: white;
+}
+
+.content-wrapper {
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+}
+
+.content-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+.content-container > h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 17vh;
+}
+
+.current-location-text {
+  cursor: pointer;
+  color: grey;
+  text-decoration: underline;
+}
+
+.input-location {
+  margin: 3% 0;
+  padding: 10px;
+  width: 100%;
+  /*border-radius: 0 0 0 50px;*/
+  border-radius: 10px;
+}
+
+.submit {
+  height: 8vh;
+  width: 50%;
+  font-size: 2.5vh;
+  background-color: #c9463b;
+  color: white;
+  outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  line-height: 5vh;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.footer a {
+  font-size: 3vh;
+  text-align: center;
+  color: white;
+}

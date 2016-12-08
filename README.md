@@ -12,9 +12,10 @@
 - Natty Davis
 - Synclair Wang
 - Jonathan Ahrens
+- Nick Taft
 
 ### User Story
-This application will ask the user to provide information on his location (either picked up by browser or taken in by address) and will make a cross-reference between older data related with a model that will determine the best response time of a service and choose which one will the best option related with the weather conditions.
+This application will take the user's location as input (either picked up by the browser or taken in by text input) and cross-reference that input with older data related with a model that will determine the best response time of a service (UBER/LYFT/NYC TAXI), thus helping the user choose which service will be the best option by comparison with the weather conditions.
 
 ### Wireframes
 ![process](./public/images/logic.jpg)
