@@ -1,21 +1,20 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+ console.log("DOM fully loaded and parsed");
 
  let display = document.getElementById("hook");
- let button = document.querySelector('#hook');
+ let btn = document.querySelector('#btn');
 
- button.addEventListener('click', getLocation);
  function getLocation() {
      if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(showPosition);
      } else {
-         x.innerHTML = "Geolocation is not supported by this browser.";
+         display.innerHTML = "Geolocation is not supported by this browser.";
      }
  }
 
  function showPosition(position) {
-     x.innerHTML = "Latitude: " + position.coords.latitude +
+     display.innerHTML = "Latitude: " + position.coords.latitude +
      "<br>Longitude: " + position.coords.longitude;
  }
+ btn.addEventListener("click", getLocation);
 
- console.log("DOM fully loaded and parsed");
-});
+
