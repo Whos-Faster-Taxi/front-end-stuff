@@ -34,7 +34,7 @@ function getWeather(position) {
       document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.humidity);
       document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.temp);
       document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.humidity);
-
+      document.querySelector
 
       // renderGraph(ctx, data);
       // document.querySelector('#city-name').innerText = data.city.name;
@@ -42,6 +42,12 @@ function getWeather(position) {
     })
     .catch(err => console.log(err));
   }
+}
+
+// function that makes fetch call to DB with params
+// humidity is 0-1
+function getServices(hum, prep, temp, month, day) {
+
 }
 
 // locationLink.addEventListener("click", getLocation);
