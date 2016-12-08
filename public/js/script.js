@@ -31,12 +31,23 @@ function getWeather(position) {
     .then(r => r.json())
     .then((data) => {
       // console.log(data);
-      renderGraph(ctx, data);
-      document.querySelector('#city-name').innerText = data.city.name;
+      document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.humidity);
+      document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.temp);
+      document.createElement('input').setAttribute('type', 'hidden').setAttribute('value', data.list[0].main.humidity);
+      document.querySelector
+
+      // renderGraph(ctx, data);
+      // document.querySelector('#city-name').innerText = data.city.name;
       console.log(data.city.name);
     })
     .catch(err => console.log(err));
   }
+}
+
+// function that makes fetch call to DB with params
+// humidity is 0-1
+function getServices(hum, prep, temp, month, day) {
+
 }
 
 // locationLink.addEventListener("click", getLocation);

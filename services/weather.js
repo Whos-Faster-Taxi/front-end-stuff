@@ -1,11 +1,11 @@
 const fetch = require('node-fetch');
 const API_KEY = process.env.WEATHER_API_KEY;
 
-function search(req, res, next) {
-  fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${req.query.cityName},us&units=imperial&cnt=16&APPID=${API_KEY}`)
+function weatherSearch(req, res, next) {
+  fetch(`http://api.openweathermap.org/data/2.5/forecast?q=NewYork,us&units=imperial&cnt=16&APPID=${API_KEY}`)
   .then(r => r.json())
   .then((data) => {
-    console.log(data);
+    console.log('open weather data', data);
     res.forecast = data;
     next();
   })
@@ -16,4 +16,4 @@ function search(req, res, next) {
   });
 }
 
-module.exports = { search };
+module.exports = { weatherSearch };
