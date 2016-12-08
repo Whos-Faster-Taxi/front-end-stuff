@@ -115,3 +115,8 @@
   text-align: center;
   color: white;
 }
+
+#transitChart {
+  height: 40%;
+  width: 40%;
+}
