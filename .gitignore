@@ -1,0 +1,5 @@
+# making sure we don't send our API key to github
+.env
+
+# don't send the node modules out please
+node_modules
