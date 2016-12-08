@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const path = require('path');
 
 router.get('/', (req, res) => {
-  res.send('other amazing stuff');
+  res.sendFile(path.join(__dirname, '../public/chart.html'));
 });
 
 module.exports = router;
