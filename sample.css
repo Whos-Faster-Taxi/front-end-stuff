@@ -1,0 +1,72 @@
+*{
+  padding:0;
+  margin:0;
+}
+header{
+    height:auto;
+    width:100%;
+    margin: 0;
+
+    background-color: rgba(0,0,0,.7);
+}
+header a{
+   padding: 25px;
+   color: white;
+   font-size: 18px;
+   text-align: center;
+   text-decoration: none;
+   position: relative;
+   top:-40px;
+}
+header img{
+  height: 80px;
+  width:80px;
+}
+body{
+  background-image:url('https://cdn.pixabay.com/photo/2015/11/29/19/25/morning-1069218__340.jpg');
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+@media screen and (max-width:420px) {
+  section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
+
+
+section{
+  width: 100%;
+  margin:0 auto;
+  align-items: center;
+}
+.submit{
+  outline: none;
+  color: white;
+  background: cornflowerblue;
+  height: 6vh;
+  font-size: 4vh;
+  padding:5px;
+  position: relative;
+  top:8px;
+  width: 15vw;
+
+}
+
+.submit:hover{
+  cursor: pointer;
+  background-color: rgba(0,240,0,.7)
+}
+input {
+  width: 27vw;
+  padding: 1.3vh;
+  margin: 1vh;
+  border-radius: 6px;
+  color:#ff0000;
+  font: 1em/1.25em Arial, Helvetica, sans-serif;
+}
+
