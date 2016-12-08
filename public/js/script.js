@@ -16,5 +16,3 @@
      "<br>Longitude: " + position.coords.longitude;
  }
  btn.addEventListener("click", getLocation);
-
-
